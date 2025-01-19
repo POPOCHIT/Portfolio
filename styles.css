@@ -82,25 +82,25 @@ nav ul li a:hover{
 
 .main-profile{
   background-image: url('images/bg-main-profile.png');
-  background-size: cover; /* Center the background image */
+/*  background-size: cover;*/
   background-repeat: no-repeat;
-  width: auto; 
-  max-width: auto; 
+  width: 100%; 
+  max-width: 100%; 
   height: auto;
-  display: inline-block;
+/*  display: inline-block;*/
   margin: 0;
-  padding: 0rem 27rem;
+/*  padding: 0rem 27rem;*/
 }
 
 .main-profile-img {
-  width: 100%; /* Make the image adapt to the container width */
-  height: auto; /* Maintain the original aspect ratio */
+  width: 40%; 
+  height: 40%; 
   max-width: 100%; 
-  display: block;
-  margin: 0;
   border-radius: 10px; 
   position: relative;
+  align-items: center;
   top: -50px; 
+  left: 30%;
   transition: all 0.3s ease;
 }
 
