@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Po Po Chit Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- header -->
+  <div class="container">
+    <div class="column"><h1 id="typewriter"></h1>  </div>
+    <!-- <div class="column"><h2>PORTFOLIO</h2></div> -->
+    <div class="column">
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+   <!-- main profile picture -->
+  <div class="main-profile">
+    <img src="images/main-profile.png" alt="Main" class="main-profile-img">
+  </div>
+  <!-- header -->
+
+  <!-- main-->
+    <!-- about me -->
+    <section id="about">
+      <h3 class="label-menu">About Me</h3>
+      <div class="profile-container">
+        <img src="images/profile.jpeg" alt="Profile Picture" class="profile-img">
+        <div class="column-about">
+          <div class="row-about"><h3>PO PO CHIT (ポポチッ)</h3></div>
+          <div class="row-about"> 
+            <p>
+              ミャンマーと日本においてシステムエンジニアとして幅広い実務経験を積んでまいりました。強みは、問題解決力とチームワークです。 具体的には、プロジェクトにおける技術的な課題に対して柔軟かつ迅速に対応し、メンバー間の円滑なコミュニケーションを通じて効果的な協力体制を築いてきました。また、フロントエンド技術（HTML、CSS、JavaScript）、バックエンド（Java、PHP）、および Photoshop を活用し、多岐にわたるシステムや Web 開発経験を持っています。
+            </p>
+          </div>
+          <div class="three-columns">
+            <button id="toggle-education" onclick="toggleEducation()">学歴を表示</button>
+            <p>ミャンマー出身</p>
+            <p>1992年07月生まれ</p>
+            <p>手作りと旅行が大好き</p>
+          </div>
+
+          <!-- Hidden content initially -->
+          <div id="education-details" style="display: none;">
+            <ul>
+              <li>2009年 02月　： ヤンゴン遠隔教育大学 文系(ミャンマー語) ミャンマー (入学)</li>
+              <li>2012年 02月　： ヤンゴン遠隔教育大学 文系(ミャンマー語) ミャンマー (卒業)</li>
+              <li>2009年 12月　： Diploma in Software Engineering (ヤンゴン大学) ミャンマー (入学)</li>
+              <li>2010年 12月　： Diploma in Software Engineering (ヤンゴン大学) ミャンマー (卒業)</li>
+              <li>2010年 12月　： International Diploma in Computer Studies(グリニッジ大学) ミャンマー (入学)</li>
+              <li>2011年 12月　： International Diploma in Computer Studies(グリニッジ大学) ミャンマー (卒業)</li>
+              <li>2012年 06月　： International Advance Diploma in Computer Studies ミャンマー (入学)</li>
+              <li>2013年 06月　： International Advance Diploma in Computer Studies ミャンマー (卒業)</li>
+              <li>2017年 04月　： 国際ことば学院日本語学校 （日本語） 日本 (入学)</li>
+              <li>2019年 03月　： 国際ことば学院日本語学校 (日本語) 日本 (卒業)</li>
+              <li>2019年 04月　： 中央情報専門学校 IT・Web 学科 日本 (入学)</li>
+              <li>2021年 03月　： 中央情報専門学校 IT・Web 学科 日本 (卒業)</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- skill -->
+    <section id="skills">
+      <h3 class="label-menu">PCスキル / テクニカルスキル</h3>
+      <div class="column-skill">
+        <div class="column-border">
+          <h3 class="border-text">OS</h3>
+          <p>Windows（業務経験：6年）</p>
+          <p>Windows Server（業務経験：3年）</p>
+          <p>Mac（独学：２年）</p>
+
+          <h3  class="border-text">データベース</h3>
+          <p>PostgreSQL（業務経験：3年）</p>
+          <p>MySQL（業務経験：2年、独学：3年）</p>
+          <p>SQLサーバ（業務経験：3年）</p>
+        </div>
+
+        <div class="column-border">
+          <h3 class="border-text">プログラミング言語</h3>
+          <p>HTML（業務経験：3年、独学：6年）</p>
+          <p>CSS（業務経験：3年、独学：6年）</p>
+          <p>JavaScript（業務経験：2年、独学：1年）</p>
+          <p>Java（業務経験：3年、独学：3年）</p>
+          <p>PHP（業務経験：１年半、独学：２年）</p>
+          <p>VB.NET（独学：2年）</p>
+          <p>Python（独学：1年）</p>
+          <p>C++（独学：1年）</p>
+        </div>
+
+        <div class="column-border">
+          <h3  class="border-text">オフィスソフト</h3>
+          <p>Microsoft Word（業務経験：6年）</p>
+          <p>Microsoft Excel（業務経験：4年）</p>
+          <p>Microsoft PowerPoint（業務経験：3年）</p>
+          <p>Microsoft Office 365（業務経験:6年）</p>
+
+          <h3  class="border-text">デザインツール</h3>
+          <p>Adobe Photoshop（業務経験：３年、独学：1年半）</p>
+          <p>Adobe Illustrator（独学：半年）</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- experience -->
+    <section id="experience">
+      <h3 class="label-menu">職務経歴書</h3>
+      <div class="company-history">
+        <h3>会社履歴</h3>
+        <div class="history-item">
+          <div class="period">2013年11月 ~ 2016年07月</div>
+          <div class="company-name">NTT DATA Myanmar Co., Ltd.</div>
+          <div class="view-more-container">
+            <button class="view-more" onclick="showDetails('ntt-data')">View More</button>
+          </div>
+        </div>
+
+        <div class="history-item">
+          <div class="period">2021年07月 ~ 現在</div>
+          <div class="company-name">ICS株式会社</div>
+          <div class="view-more-container">
+            <button class="view-more" onclick="showDetails('ics')">View More</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Detailed job experiences -->
+      <!-- NTT社 -->
+      <div id="ntt-data" class="job-detail">
+        <h4>NTT DATA Myanmar Co., Ltd. 詳細</h4>
+        <p>事業内容: システムエンジニア</p>
+        <p>設立: 2012年</p>
+        <p>従業員数: 300人以上</p>
+        <p>【職務内容】</p>
+
+        <!-- Split Programming Skills section into two columns -->
+        <div class="details-container">
+          <div class="detail-item">
+            <strong>プログラミングスキル:</strong>
+          </div>
+          <div class="detail-item">
+            Java(TERASOLUNA Framework, TERASOLUNA VICS Framework)を使用した<br>
+            HTML, CSS, JavaScript を使った画面設計・開発<br>
+            WordPress: 管理およびカスタマイズ、CMS基本操作の実施<br>
+            StrutsおよびSpringフレームワークの理解と活用
+          </div>
+        </div>
+
+        <div class="details-container">
+          <div class="detail-item">
+            <strong>データベース設計・管理:</strong>
+          </div>
+          <div class="detail-item">
+            PostgreSQL ・MySQLによるデータベース設計・運用、SQL Query作成
+          </div>
+        </div>
+
+        <div class="details-container">
+          <div class="detail-item">
+            <strong>デザイン・ツール:</strong>
+          </div>
+          <div class="detail-item">
+            Photoshop を使ったデザイン作業
+          </div>
+        </div>
+
+        <div class="details-container">
+          <div class="detail-item">
+            <strong>オフィスソフト:</strong>
+          </div>
+          <div class="detail-item">
+            Microsoft Office 365 を活用した業務支援
+          </div>
+        </div>
+      </div>
+
+      <!-- ICS社 -->
+      <div id="ics" class="job-detail">
+        <h4>ICS株式会社 詳細</h4>
+        <p>事業内容: Web開発, POSレジ評価、ソフトウェア評価</p>
+        <p>設立: 2007年</p>
+        <p>従業員数: 50人以上</p>
+        <p>【職務内容】</p>
+        
+        <!-- Split Programming Skills section into two columns -->
+        <div class="details-container">
+          <div class="detail-item">
+            <strong>フロントエンド・Web開発:</strong>
+          </div>
+          <div class="detail-item">
+            Photoshop を使ったデザイン作業<br>
+            HTML、CSS、JavaScript、jQuery、PHPを使用したWebサイトの設計・開発<br>
+            WordPress: 管理およびカスタマイズ、CMS基本操作の実施
+          </div>
+        </div>
+
+        <div class="details-container">
+          <div class="detail-item">
+            <strong>テストとデバッグ: :</strong>
+          </div>
+          <div class="detail-item">
+            フロントエンドの不具合を特定・修正
+          </div>
+        </div>
+
+        <div class="details-container">
+          <div class="detail-item">
+            <strong>サーバ環境:</strong>
+          </div>
+          <div class="detail-item">
+            POS/PrimeStoreサーバ環境<br>
+            TXOneサーバ環境でのPOSとサーバのSafeLock設定<br>
+            SQLサーバのデータベース管理
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- contact -->
+   <section id="contact">
+    <h3 class="label-menu">Contact</h3>
+      <p>Email: <a href="mailto:popochit.pp9@gmail.com">popochit.pp9@gmail.com</a></p>
+  </section>
+<!-- main -->
+  <footer>
+    <p>&copy; 2025 PoPo. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

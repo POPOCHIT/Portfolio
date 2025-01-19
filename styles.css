@@ -1,0 +1,342 @@
+:root {
+/*  --primary-color: #51769c;  */
+  --secondary-color: #eadcca;
+  --text-color: #103959 ;
+
+}
+
+body {
+  font-family: serif;
+  background-color: var(--secondary-color);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -webkit-backface-visibility: hidden;
+  box-sizing: border-box;
+  word-spacing: 1px;
+  height: 100%;
+  color: var(--text-color);
+  justify-content: center; /* Center horizontally */
+  align-items: center;   /* Center vertically */
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 16px;
+
+  }
+}
+.container {
+  padding: 10px 30px;
+  position: relative;
+  display: flex;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: center;
+  align-items: center;   
+}
+.column {
+/*  display: flex;*/
+  flex-wrap: wrap;
+  flex: 10%;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: right;
+  gap: 10px;
+
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: var(--text-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  border: 1px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover{
+  background-color: var(--text-color);
+  color: var(--secondary-color);
+  box-shadow: 0px 4px 10px rgba(0, 123, 255, 0.4); /* Stronger shadow on hover */
+}
+
+.main-profile{
+  background-image: url('images/bg-main-profile.png');
+  background-size: cover; /* Center the background image */
+  background-repeat: no-repeat;
+  width: auto; 
+  max-width: auto; 
+  height: auto;
+  display: inline-block;
+  margin: 0;
+  padding: 0rem 27rem;
+}
+
+.main-profile-img {
+  width: 100%; /* Make the image adapt to the container width */
+  height: auto; /* Maintain the original aspect ratio */
+  max-width: 100%; 
+  display: block;
+  margin: 0;
+  border-radius: 10px; 
+  position: relative;
+  top: -50px; 
+  transition: all 0.3s ease;
+}
+
+/* Profile Image Styling */
+.profile-container {
+  display: inline-block;
+  padding-left: 5rem;
+  display: flex;
+  position: relative;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: center;
+  align-items: center;   
+/*  gap: 10px; */
+}
+
+.profile-img {
+  width: 180px; /* Adjust the size */
+  height: 250px; /* Adjust the size */
+  border-radius: 20%; /* Makes the image circular */
+  box-shadow: 10px 10px 10px rgba(41,70,95,255); /* Adds a shadow */
+  object-fit: cover; /* Ensures the image fits within the circular frame */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 20px;
+}
+
+#about {
+  position: relative; /* Ensures proper positioning for inner elements */
+}
+
+.column-about {
+  grid-template-rows: auto auto; /* Two rows of equal height */
+  gap: 10px; /* Space between rows */
+  width: 80%;
+  justify-content: center;
+  padding: 5px;
+}
+
+.row-about {
+  padding-left:20px;
+  text-align: left;
+}
+
+.three-columns {
+  display: flex; /* Use flexbox for horizontal layout */
+  justify-content: space-around; /* Add space between the columns */
+  align-items: center; /* Align items vertically in the center */
+}
+
+.three-columns p {
+  padding: 10px; /* Add padding inside each column */
+  color: var(--text-color); /* Text color */
+  text-align: center; /* Center the text horizontally */
+  border-radius: 20%;
+  border: 1px solid;
+}
+
+
+#skills {
+  position: relative; /* Ensures proper positioning for inner elements */
+  margin: 0 auto;
+  padding: 0;
+}
+
+.column-skill {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+
+.column-border {
+  flex-wrap: wrap;
+  flex: 10%;
+  min-width: 300px;
+  text-align: center;
+} 
+
+.column-border h3 {
+  margin-top: 20px;
+}
+
+.column-border p {
+  margin: 5px 0;
+}
+
+.border-text{
+  margin: 0px 30px;
+  padding: 10px; 
+  color: var(--text-color); 
+  text-align: center; 
+  border-radius: 20%;
+  border: 1px solid;
+}
+
+#toggle-education {
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+  padding: 10px 40px;
+  border: none;
+  border-radius: 20%;
+  cursor: pointer;
+  border: 1px solid;
+}
+
+#toggle-education:hover {
+  background-color: #103959; 
+  color: var(--secondary-color);
+}
+
+/* Styling for education details */
+#education-details ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#education-details li {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+#experience {
+  position: relative; /* Ensures proper positioning for inner elements */
+  margin: 0 auto;
+  padding: 0px;
+
+}
+
+.company-history {
+  margin: 0px auto;
+  padding: 10px 20px;
+}
+
+.history-item {
+  margin: 10px 0;
+  display: grid;
+  grid-template-columns: 250px 250px 250px; 
+}
+
+.period {
+  font-weight: bold;
+    color: var(--text-color);
+}
+
+.company-name {
+  color: var(--text-color); /*  #7a7a7a*/
+/*  padding-left: 50px;*/
+}
+
+.view-more-container {
+    text-align: center; /* Centers the button */
+}
+
+.view-more {
+    background-color: #103959;
+    color: var(--secondary-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.view-more:hover {
+    background-color: #0d2c3c;
+}
+
+.job-detail {
+  display: none; /* Hide the job details initially */
+  margin-bottom: 10px;
+  background-color: #f7f3ed; /*#edebee*/
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Adding the background image using ::after */
+
+/*.job-detail::after {
+    background-image: url('images/NTT_DATA.png'); 
+    background-repeat: no-repeat; 
+    background-position: right center; 
+    ackground-size: 1500px 412px; 
+    opacity: 0.3; 
+    z-index: -1; 
+}*/
+
+.job-detail p {
+    color: #103959;
+}
+
+.details-container {
+    display: grid;
+    grid-template-columns: 0.8fr 3fr; /* Title column (1fr) and content column (3fr) */
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.detail-item {
+    color: #103959;
+}
+
+.detail-item strong {
+    color: #103959;
+}
+
+#contact p{
+/*  margin: 10px 20px;*/
+  padding: 10px 20px;
+
+}
+
+#contact a {
+    padding: 10px 20px;
+    color: #103959; /* Blue color for links */
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+}
